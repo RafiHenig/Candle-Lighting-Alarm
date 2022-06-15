@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShabbosAlarm", "ShabbosAlarm\ShabbosAlarm.csproj", "{D063C1E1-0BF8-47B2-98CD-8B57F79AFF27}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D063C1E1-0BF8-47B2-98CD-8B57F79AFF27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D063C1E1-0BF8-47B2-98CD-8B57F79AFF27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D063C1E1-0BF8-47B2-98CD-8B57F79AFF27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D063C1E1-0BF8-47B2-98CD-8B57F79AFF27}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {12D61FD5-9A64-46B9-B556-FE06777197BB}
+	EndGlobalSection
+EndGlobal
