@@ -19,7 +19,7 @@ public class DailyCheckJob : IJob
 
             await context.Scheduler.ScheduleJob(
                 JobBuilder.Create<PlayJob>().Build(),
-                TriggerBuilder.Create().WithSimpleSchedule(x => x.WithRepeatCount(0)).StartAt(playTime).Build()
+                TriggerBuilder.Create().StartAt(playTime).Build()
             );
         }
     }
