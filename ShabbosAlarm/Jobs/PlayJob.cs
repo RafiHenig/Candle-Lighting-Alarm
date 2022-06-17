@@ -2,9 +2,16 @@
 
 public class PlayJob : IJob
 {
-	public async Task Execute(IJobExecutionContext context)
-	{
-		var media = new SoundPlayer(@"Assets/goodshabbat.wav");
-		media.Play();
-	}
+    private readonly ILogger _logger;
+
+    public PlayJob(ILogger<PlayJob> logger) => _logger = logger;
+
+    public Task Execute(IJobExecutionContext context)
+    {
+        new SoundPlayer(@"Assets/goodshabbat.wav").Play();
+
+        _logger.LogInformation("Playing...");
+
+        return Task.CompletedTask;
+    }
 }
