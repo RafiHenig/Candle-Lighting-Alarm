@@ -1,6 +1,4 @@
-﻿using System.Media;
-
-namespace ShabbosAlarm.Jobs;
+﻿namespace ShabbosAlarm.Jobs;
 
 public class PlayJob : IJob
 {

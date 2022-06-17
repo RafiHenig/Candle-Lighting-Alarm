@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShabbosAlarm", "ShabbosAlarm\ShabbosAlarm.csproj", "{D063C1E1-0BF8-47B2-98CD-8B57F79AFF27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShabbosAlarm", "ShabbosAlarm\ShabbosAlarm.csproj", "{D063C1E1-0BF8-47B2-98CD-8B57F79AFF27}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleEF", "C:\Users\Rafi\source\repos\ConsoleApp6\ConsoleEF\ConsoleEF.csproj", "{F725F3C1-545A-4370-B9C4-275354BB4B57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{D063C1E1-0BF8-47B2-98CD-8B57F79AFF27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D063C1E1-0BF8-47B2-98CD-8B57F79AFF27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D063C1E1-0BF8-47B2-98CD-8B57F79AFF27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F725F3C1-545A-4370-B9C4-275354BB4B57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F725F3C1-545A-4370-B9C4-275354BB4B57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F725F3C1-545A-4370-B9C4-275354BB4B57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F725F3C1-545A-4370-B9C4-275354BB4B57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,16 +1,15 @@
-﻿global using System;
-global using System.Collections.Generic;
-global using System.Linq;
-global using System.Text;
-global using System.Threading.Tasks;
+﻿global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.Extensions.Hosting;
+global using Microsoft.Extensions.Logging;
 global using Quartz;
-global using Quartz.Impl;
+global using ShabbosAlarm.Extensions;
+global using ShabbosAlarm.Jobs;
+global using System;
+global using System.Globalization;
+global using System.Media;
+global using System.Threading.Tasks;
 global using Zmanim;
 global using Zmanim.JewishCalendar;
 global using Zmanim.TimeZone;
 global using Zmanim.Utilities;
-
-global using ShabbosAlarm.Jobs;
-
-global using System.Globalization;
-
