@@ -5,6 +5,7 @@ IHostBuilder CreateHostBuilder(string[] args)
     Console.OutputEncoding = Encoding.Unicode;
 
     return Host.CreateDefaultBuilder(args)
+               .UseWindowsService()
                .ConfigureServices((hostContext, services) =>
                {
                    services.AddLogging(x => x.ClearProviders()
@@ -14,6 +15,7 @@ IHostBuilder CreateHostBuilder(string[] args)
                                                  x.TimestampFormat = "[yyyy-MM-dd HH:mm:ss] ";
                                                  x.SingleLine = true;
                                              })
+                                             .AddEventLog()
                                              .AddDebug()
                    );
 
@@ -26,11 +28,8 @@ IHostBuilder CreateHostBuilder(string[] args)
 
                    services.AddQuartz(q =>
                    {
-
-
                        q.UseMicrosoftDependencyInjectionJobFactory();
                        q.UseInMemoryStore();
-
                        q.ScheduleJob<DailyCheckJob>(trigger => trigger.StartNow());
                        q.ScheduleJob<DailyCheckJob>(trigger => trigger.WithDailyTimeIntervalSchedule(x => x.OnEveryDay()
                                                                                                            .StartingDailyAt(TimeOfDay.HourAndMinuteOfDay(7, 00))
