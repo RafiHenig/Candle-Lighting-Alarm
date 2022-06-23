@@ -10,7 +10,8 @@
 	<ItemGroup>
 		<None Remove="appsettings.Development.json" />
 		<None Remove="appsettings.json" />
-		<None Remove="Assets\goodshabbat.wav" />
+		<None Remove="Assets\song.wav" />
+		<None Remove="Services\PlayService.xaml" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -24,13 +25,17 @@
 			<ExcludeFromSingleFile>true</ExcludeFromSingleFile>
 			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
 		</Content>
-		<Content Include="Assets\goodshabbat.wav">
+		<Content Include="Assets\song.wav">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Assets\alarm.wav">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.0" />
+		<PackageReference Include="NAudio" Version="2.1.0" />
 		<PackageReference Include="Quartz" Version="3.4.0" />
 		<PackageReference Include="Quartz.AspNetCore" Version="3.4.0" />
 		<PackageReference Include="Quartz.Extensions.DependencyInjection" Version="3.4.0" />
@@ -44,6 +49,12 @@
 		<PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Console" Version="6.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="6.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Page Include="Services\PlayService.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </Page>
 	</ItemGroup>
 
 </Project>

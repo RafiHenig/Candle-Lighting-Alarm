@@ -2,6 +2,7 @@
 global using Microsoft.Extensions.DependencyInjection;
 global using Microsoft.Extensions.Hosting;
 global using Microsoft.Extensions.Logging;
+global using NAudio.Wave;
 global using Quartz;
 global using ShabbosAlarm.Contracts;
 global using ShabbosAlarm.Extensions;
