@@ -53,7 +53,10 @@ public class DailyCheckJob : IJob
     {
         await scheduler.ScheduleJob(
               JobBuilder.Create<PlayJob>().Build(),
-              TriggerBuilder.Create().StartAt(playTime).Build()
+              TriggerBuilder.Create()
+                            .StartAt(playTime)
+                            .WithSimpleSchedule(a => a.WithMisfireHandlingInstructionNextWithRemainingCount())
+                            .Build()
         );
 
         _logger.LogInformation($"Schedualed an alarm for {playTime:hh:mm:ss}");
